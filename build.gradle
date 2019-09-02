@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'in.ashwanik'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile("org.assertj:assertj-core:3.10.0")
+    compile "org.slf4j:slf4j-api:1.7.25"
+    compile "ch.qos.logback:logback-classic:1.2.3"
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.1")
+}
