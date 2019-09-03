@@ -5,6 +5,7 @@ Practical implementation for all the design patterns
 - [References](#references)
 
 ## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor) 
+## [Pub-Sub](src/main/java/in/ashwanik/pdp/pub_sub) 
 
 
 # References
