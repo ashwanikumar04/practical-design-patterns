@@ -17,7 +17,7 @@ public class Game {
     }
 
     public void play() throws Exception {
-        GameEntity gameEntity = GameEntity.builder().killPoint(150).name("monster").build();
+        GameEntity gameEntity = new GameEntity(150, "monster");
         Thread.sleep(1000);
         gameEntityStats.updateStats(gameEntity);
     }
