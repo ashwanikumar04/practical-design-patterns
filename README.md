@@ -2,6 +2,8 @@
 Practical implementation for all the design patterns
 - [practical-design-patterns](#practical-design-patterns)
   - [Chain of responsibility](#chain-of-responsibility)
+  - [Publisher-Subscriber](#publisher-subscriber)
+  - [Observer](#observer)
 - [References](#references)
 
 ## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor) 
