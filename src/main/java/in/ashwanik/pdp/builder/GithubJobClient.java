@@ -41,10 +41,11 @@ public class GithubJobClient {
 
     public static class GithubJobClientBuilder {
         private static int TIMEOUT = 30000;
-        private Integer connectTimeout = TIMEOUT;
-        private Integer writeTimeout = TIMEOUT;
-        private Integer readTimeout = TIMEOUT;
-        private Integer httpClientConnectionPoolSize = 5;
+        private static int POOL_SIZE = 5;
+        private Integer connectTimeout;
+        private Integer writeTimeout;
+        private Integer readTimeout;
+        private Integer httpClientConnectionPoolSize;
         private OkHttpClient httpClient;
         private GithubJobClientContract clientContract;
         private String jobSearchUrl;
@@ -105,6 +106,7 @@ public class GithubJobClient {
         public GithubJobClient build() {
             OkHttpClient localHttpClient;
             if (isClientPropertySet()) {
+                setHttpClientDefaults();
                 localHttpClient = buildHttpClient();
             } else {
                 localHttpClient = httpClient;
@@ -113,6 +115,22 @@ public class GithubJobClient {
             GithubJobClient githubJobClient = new GithubJobClient(localHttpClient, this);
             githubJobClient.validate();
             return githubJobClient;
+        }
+
+        private void setHttpClientDefaults() {
+            if (connectTimeout == null) {
+                connectTimeout = TIMEOUT;
+            }
+            if (writeTimeout == null) {
+                writeTimeout = TIMEOUT;
+            }
+            if (readTimeout == null) {
+                readTimeout = TIMEOUT;
+            }
+            if (httpClientConnectionPoolSize == null) {
+                httpClientConnectionPoolSize = POOL_SIZE;
+            }
+
         }
 
         private boolean isClientPropertySet() {
