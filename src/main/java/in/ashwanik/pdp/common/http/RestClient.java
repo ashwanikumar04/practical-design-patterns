@@ -24,7 +24,7 @@ public class RestClient {
     private OkHttpClient httpClient;
 
     public <S, E, K> RestResponse<S, E> post(Class<S> successClazz, Class<E> errorClazz, K data, RequestParam requestParams) {
-        RequestBody body = RequestBody.create(JSON, data == null ? "" : Json.serialize(data));
+        RequestBody body = RequestBody.create(data == null ? "" : Json.serialize(data), JSON);
         Request.Builder builder = new Request.Builder()
                 .url(requestParams.getUrl())
                 .post(body);
