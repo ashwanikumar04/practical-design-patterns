@@ -1,42 +1,43 @@
 package in.ashwanik.pdp.builder;
 
-import in.ashwanik.pdp.common.GithubJobClientContract;
+import in.ashwanik.pdp.common.githubjobs.GithubJob;
+import in.ashwanik.pdp.common.githubjobs.GithubJobClientContract;
+import in.ashwanik.pdp.common.http.RequestParam;
+import in.ashwanik.pdp.common.http.RestClient;
+import in.ashwanik.pdp.iterator.SearchFilter;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class GithubJobClient {
     static Integer DEFAULT_TIMEOUT = 2000;
-    private final OkHttpClient httpClient;
+    private final RestClient restClient;
 
-    private String jobSearchUrl;
-    private String jobUrl;
+    private String baseUrl;
     private GithubJobClientContract githubJobClientContract;
 
-    private GithubJobClient(OkHttpClient httpClient, GithubJobClientBuilder githubJobClientBuilder) {
-        this.httpClient = httpClient;
+    private GithubJobClient(RestClient restClient, GithubJobClientBuilder githubJobClientBuilder) {
+        this.restClient = restClient;
         this.githubJobClientContract = githubJobClientBuilder.clientContract;
-        this.jobSearchUrl = githubJobClientBuilder.jobSearchUrl;
-        this.jobUrl = githubJobClientBuilder.jobUrl;
+        this.baseUrl = githubJobClientBuilder.baseUrl;
     }
 
     public static GithubJobClientBuilder builder() {
         return new GithubJobClientBuilder();
     }
 
-    private void validate() {
-        if (httpClient == null) {
-            throw new IllegalArgumentException("Http client can't be null");
-        }
-        if (githubJobClientContract == null) {
-            throw new IllegalArgumentException("Client contract can't be null");
-        }
 
-        if (StringUtils.isBlank(jobSearchUrl) || StringUtils.isBlank(jobUrl)) {
-            throw new IllegalArgumentException("jobSearchUrl or jobUrl can't be null");
-        }
+    public List<GithubJob> getJobs(SearchFilter searchFilter) {
+        return githubJobClientContract.getJobs(restClient, RequestParam
+                .paramsBuilder()
+                .url(baseUrl + "positions.json")
+                .timeout(DEFAULT_TIMEOUT)
+                .queryParams(Collections.singletonMap("page", Integer.toString(searchFilter.getPage())))
+                .build());
     }
 
     public static class GithubJobClientBuilder {
@@ -48,8 +49,7 @@ public class GithubJobClient {
         private Integer httpClientConnectionPoolSize;
         private OkHttpClient httpClient;
         private GithubJobClientContract clientContract;
-        private String jobSearchUrl;
-        private String jobUrl;
+        private String baseUrl;
 
         private GithubJobClientBuilder() {
         }
@@ -84,13 +84,8 @@ public class GithubJobClient {
             return this;
         }
 
-        public GithubJobClientBuilder jobSearchUrl(String jobSearchUrl) {
-            this.jobSearchUrl = jobSearchUrl;
-            return this;
-        }
-
-        public GithubJobClientBuilder jobUrl(String jobUrl) {
-            this.jobUrl = jobUrl;
+        public GithubJobClientBuilder baseUrl(String baseUrl) {
+            this.baseUrl = baseUrl;
             return this;
         }
 
@@ -112,9 +107,19 @@ public class GithubJobClient {
                 localHttpClient = httpClient;
             }
 
-            GithubJobClient githubJobClient = new GithubJobClient(localHttpClient, this);
-            githubJobClient.validate();
+            GithubJobClient githubJobClient = new GithubJobClient(RestClient.builder().httpClient(localHttpClient).build(), this);
+            validate(githubJobClient);
             return githubJobClient;
+        }
+
+        private void validate(GithubJobClient githubJobClient) {
+            if (githubJobClient.githubJobClientContract == null) {
+                throw new IllegalArgumentException("Client contract can't be null");
+            }
+
+            if (StringUtils.isBlank(githubJobClient.baseUrl)) {
+                throw new IllegalArgumentException("baseUrl can't be null or empty");
+            }
         }
 
         private void setHttpClientDefaults() {
@@ -130,7 +135,6 @@ public class GithubJobClient {
             if (httpClientConnectionPoolSize == null) {
                 httpClientConnectionPoolSize = POOL_SIZE;
             }
-
         }
 
         private boolean isClientPropertySet() {

@@ -14,8 +14,8 @@ public class RequestParam extends RestClientParam {
      */
     private String url;
 
-    RequestParam(String url, Map<String, String> headers, Integer timeout) {
-        super(timeout, headers);
+    RequestParam(String url, Map<String, String> headers, Map<String, String> queryParams, Integer timeout) {
+        super(timeout, headers, queryParams);
         this.url = url;
     }
 
@@ -26,6 +26,7 @@ public class RequestParam extends RestClientParam {
     public static class RequestParamsBuilder {
         private String url;
         private Map<String, String> headers;
+        private Map<String, String> queryParams;
         private Integer timeout;
 
         RequestParamsBuilder() {
@@ -41,13 +42,18 @@ public class RequestParam extends RestClientParam {
             return this;
         }
 
+        public RequestParamsBuilder queryParams(Map<String, String> queryParams) {
+            this.queryParams = queryParams;
+            return this;
+        }
+
         public RequestParamsBuilder timeout(Integer timeout) {
             this.timeout = timeout;
             return this;
         }
 
         public RequestParam build() {
-            return new RequestParam(url, headers, timeout);
+            return new RequestParam(url, headers, queryParams, timeout);
         }
     }
 }

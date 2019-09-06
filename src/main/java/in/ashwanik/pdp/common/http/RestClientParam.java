@@ -21,4 +21,6 @@ public class RestClientParam {
      * Map containing the headers
      */
     private Map<String, String> headers;
+
+    private Map<String, String> queryParams;
 }

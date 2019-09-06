@@ -2,7 +2,9 @@ package in.ashwanik.pdp.common.http;
 
 import in.ashwanik.pdp.common.utils.Json;
 import lombok.Builder;
+import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
+import okhttp3.HttpUrl;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -21,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 public class RestClient {
     private static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
+    @NonNull
     private OkHttpClient httpClient;
 
     public <S, E, K> RestResponse<S, E> post(Class<S> successClazz, Class<E> errorClazz, K data, RequestParam requestParams) {
@@ -33,8 +36,11 @@ public class RestClient {
     }
 
     public <S, E> RestResponse<S, E> get(Class<S> successClazz, Class<E> errorClazz, RequestParam requestParams) {
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(requestParams.getUrl())
+                .newBuilder();
+        addQueryParams(requestParams.getQueryParams(), urlBuilder);
         Request.Builder builder = new Request.Builder()
-                .url(requestParams.getUrl());
+                .url(urlBuilder.build());
         addHeaders(requestParams.getHeaders(), builder);
         return handleResponse(successClazz, errorClazz, builder.build(), requestParams);
     }
@@ -43,6 +49,14 @@ public class RestClient {
         if (headers != null && !headers.isEmpty()) {
             for (Map.Entry<String, String> entry : headers.entrySet()) {
                 builder.addHeader(entry.getKey(), entry.getValue());
+            }
+        }
+    }
+
+    private void addQueryParams(Map<String, String> headers, HttpUrl.Builder builder) {
+        if (headers != null && !headers.isEmpty()) {
+            for (Map.Entry<String, String> entry : headers.entrySet()) {
+                builder.addQueryParameter(entry.getKey(), entry.getValue());
             }
         }
     }
