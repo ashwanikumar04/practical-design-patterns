@@ -7,7 +7,7 @@ class: center, middle
 
 # 
 
-.center[![Chain of responsibility](/docs/images/cor.png)]
+.center[![Chain of responsibility](docs/images/cor.png)]
 
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/cor" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
@@ -17,7 +17,7 @@ class: center, middle
 
 # 
 
-<img src="/docs/images/pub_sub.png" alt="Publisher-Subscriber" class="img-center"/>
+<img src="docs/images/pub_sub.png" alt="Publisher-Subscriber" class="img-center"/>
 
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/pub_sub" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
@@ -27,7 +27,7 @@ class: center, middle
 
 # 
 
-<img src="/docs/images/observer.png" alt="Observer" class="img-center"/>
+<img src="docs/images/observer.png" alt="Observer" class="img-center"/>
 
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/observer" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
@@ -37,7 +37,7 @@ class: center, middle
 
 # 
 
-<img src="/docs/images/builder.png" alt="Builder" class="img-center"/>
+<img src="docs/images/builder.png" alt="Builder" class="img-center"/>
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/builder" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 </div>
@@ -46,7 +46,7 @@ class: center, middle
 
 # 
 
-.center[![Iterator](/docs/images/iterator.png)]
+.center[![Iterator](docs/images/iterator.png)]
 
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/iterator" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
@@ -56,7 +56,7 @@ class: center, middle
 
 # 
 
-.center[![Decorator](/docs/images/decorator.png)]
+.center[![Decorator](docs/images/decorator.png)]
 
 <div class="a-center">
  For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/decorator" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
