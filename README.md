@@ -6,6 +6,7 @@ Practical implementation for all the design patterns
   - [Observer](#observer)
   - [Builder](#builder)
   - [Iterator](#iterator)
+  - [Decorator](#decorator)
 - [References](#references)
 
 ## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor) 
@@ -13,6 +14,7 @@ Practical implementation for all the design patterns
 ## [Observer](src/main/java/in/ashwanik/pdp/observer) 
 ## [Builder](src/main/java/in/ashwanik/pdp/builder) 
 ## [Iterator](src/main/java/in/ashwanik/pdp/iterator) 
+## [Decorator](src/main/java/in/ashwanik/pdp/decorator) 
 
 
 # References
