@@ -5,12 +5,14 @@ Practical implementation for all the design patterns
   - [Publisher-Subscriber](#publisher-subscriber)
   - [Observer](#observer)
   - [Builder](#builder)
+  - [Iterator](#iterator)
 - [References](#references)
 
 ## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor) 
 ## [Publisher-Subscriber](src/main/java/in/ashwanik/pdp/pub_sub) 
 ## [Observer](src/main/java/in/ashwanik/pdp/observer) 
 ## [Builder](src/main/java/in/ashwanik/pdp/builder) 
+## [Iterator](src/main/java/in/ashwanik/pdp/iterator) 
 
 
 # References
