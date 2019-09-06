@@ -2,7 +2,7 @@
 
 **Decorator** pattern is a design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of underlying object from the same class.
 
-![Decorator](decorator.png)
+![Decorator](/docs/images/decorator.png)
 
 
 ## Examples from Java core libraries
