@@ -1,6 +1,7 @@
 package in.ashwanik.pdp.common.http;
 
 import lombok.Getter;
+import okhttp3.HttpUrl;
 
 import java.util.Map;
 
@@ -14,9 +15,20 @@ public class RequestParam extends RestClientParam {
      */
     private String url;
 
-    RequestParam(String url, Map<String, String> headers, Map<String, String> queryParams, Integer timeout) {
+    private RequestParam(String url, Map<String, String> headers, Map<String, String> queryParams, Integer timeout) {
         super(timeout, headers, queryParams);
-        this.url = url;
+        this.url = getUrlWithQueryParams(url);
+    }
+
+    private String getUrlWithQueryParams(String url) {
+        if (getQueryParams() != null && !getQueryParams().isEmpty()) {
+            HttpUrl.Builder builder = HttpUrl.parse(url).newBuilder();
+            for (Map.Entry<String, String> entry : getQueryParams().entrySet()) {
+                builder.addQueryParameter(entry.getKey(), entry.getValue());
+            }
+            return builder.build().toString();
+        }
+        return url;
     }
 
     public static RequestParamsBuilder paramsBuilder() {

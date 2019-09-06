@@ -4,7 +4,6 @@ import in.ashwanik.pdp.common.utils.Json;
 import lombok.Builder;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
-import okhttp3.HttpUrl;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -36,11 +35,8 @@ public class RestClient {
     }
 
     public <S, E> RestResponse<S, E> get(Class<S> successClazz, Class<E> errorClazz, RequestParam requestParams) {
-        HttpUrl.Builder urlBuilder = HttpUrl.parse(requestParams.getUrl())
-                .newBuilder();
-        addQueryParams(requestParams.getQueryParams(), urlBuilder);
         Request.Builder builder = new Request.Builder()
-                .url(urlBuilder.build());
+                .url(requestParams.getUrl());
         addHeaders(requestParams.getHeaders(), builder);
         return handleResponse(successClazz, errorClazz, builder.build(), requestParams);
     }
@@ -53,13 +49,6 @@ public class RestClient {
         }
     }
 
-    private void addQueryParams(Map<String, String> headers, HttpUrl.Builder builder) {
-        if (headers != null && !headers.isEmpty()) {
-            for (Map.Entry<String, String> entry : headers.entrySet()) {
-                builder.addQueryParameter(entry.getKey(), entry.getValue());
-            }
-        }
-    }
 
     private <S, E> RestResponse<S, E> handleResponse(Class<S> successClazz, Class<E> errorClazz, Request request, RequestParam requestParams) {
         try (Response response = getResponse(request, requestParams.getTimeout())) {
