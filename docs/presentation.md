@@ -7,46 +7,57 @@ class: center, middle
 
 # 
 
-.center[![Chain of responsibility](/images/cor.png)]
+.center[![Chain of responsibility](/docs/images/cor.png)]
 
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/cor)]
-
----
-
-# 
-
-<img src="/images/pub_sub.png" alt="Publisher-Subscriber" class="img-center"/>
-
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/pub_sub)]
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/cor" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
 
 ---
 
 # 
 
-<img src="/images/observer.png" alt="Observer" class="img-center"/>
+<img src="/docs/images/pub_sub.png" alt="Publisher-Subscriber" class="img-center"/>
 
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/observer)]
-
----
-
-# 
-
-<img src="/images/builder.png" alt="Builder" class="img-center"/>
-
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/builder)]
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/pub_sub" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
 
 ---
 
 # 
 
-.center[![Iterator](/images/iterator.png)]
+<img src="/docs/images/observer.png" alt="Observer" class="img-center"/>
 
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/iterator)]
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/observer" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
 
 ---
 
 # 
 
-.center[![Decorator](/images/decorator.png)]
+<img src="/docs/images/builder.png" alt="Builder" class="img-center"/>
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/builder" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
 
-.center[For implementation, see [here](src/main/java/in/ashwanik/pdp/decorator)]
+---
+
+# 
+
+.center[![Iterator](/docs/images/iterator.png)]
+
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/iterator" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
+
+---
+
+# 
+
+.center[![Decorator](/docs/images/decorator.png)]
+
+<div class="a-center">
+ For implementation, see <a href="https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/decorator" target="_blank">here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
