@@ -29,3 +29,5 @@ nbdist/
 logs/app.log
 logs/
 bin
+.history
+node_modules
