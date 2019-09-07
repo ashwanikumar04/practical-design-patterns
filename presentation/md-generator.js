@@ -39,7 +39,7 @@ var array = [{
 
 var generated = [];
 var text =
-    "class: center, middle \n\n# Practical Design Patterns\n##### *Use left-right arrow for navigation*\n\n";
+    "class: center, middle \n\n# Practical Design Patterns\n##### Use *left-right arrow* for navigation or press *h* for more options.\n\n";
 generated.push(text);
 
 for (var index = 0; index < array.length; index++) {

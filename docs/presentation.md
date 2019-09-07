@@ -1,7 +1,7 @@
 class: center, middle 
 
 # Practical Design Patterns
-##### *Use left-right arrow for navigation*
+##### Use *left-right arrow* for navigation or press *h* for more options.
 
 ---
 
