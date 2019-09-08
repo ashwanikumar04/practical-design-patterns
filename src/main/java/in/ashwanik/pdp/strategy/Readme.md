@@ -1,9 +1,9 @@
-# Publisher-Subscriber
+# Strategy
 
-**Publisher-Subscriber** is a messaging pattern where senders of messages, called publishers, do not program the messages to be sent directly to specific receivers, called subscribers, but instead categorize published messages into classes without knowledge of which subscribers, if any, there may be. Similarly, subscribers express interest in one or more classes and only receive messages that are of interest, without knowledge of which publishers, if any, there are.
+**Strategy** is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
-![Pub-Sub](/docs/images/pub_sub.png)
+![Strategy](/docs/images/strategy.png)
 
 
 ### References
-- [Wiki](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
+- [java.util.Comparator#compare()](http://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#compare-T-T-) called from `Collections#sort()`.
