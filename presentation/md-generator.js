@@ -34,6 +34,12 @@ var array = [{
         "name": "Decorator",
         "code": "decorator",
         "imgClass": "img-center-50"
+    },
+    {
+            "img": "strategy",
+            "name": "strategy",
+            "code": "strategy",
+            "imgClass": "img-center-70"
     }
 ];
 
