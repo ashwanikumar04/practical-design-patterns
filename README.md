@@ -4,13 +4,14 @@ Practical implementation for all the design patterns
 
 For a quick run through, have a look at [this](http://git.ashwanik.in/practical-design-patterns/).
 
-- [practical-design-patterns](#practical-design-patterns)
+- [Practical Design Patterns](#practical-design-patterns)
   - [Chain of responsibility](#chain-of-responsibility)
   - [Publisher-Subscriber](#publisher-subscriber)
   - [Observer](#observer)
   - [Builder](#builder)
   - [Iterator](#iterator)
   - [Decorator](#decorator)
+  - [Strategy](#strategy)
 - [References](#references)
 
 ## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor)
@@ -24,6 +25,8 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 ## [Iterator](src/main/java/in/ashwanik/pdp/iterator)
 
 ## [Decorator](src/main/java/in/ashwanik/pdp/decorator)
+
+## [Strategy](src/main/java/in/ashwanik/pdp/strategy)
 
 # References
 
