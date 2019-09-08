@@ -39,7 +39,7 @@ var array = [{
             "img": "strategy",
             "name": "strategy",
             "code": "strategy",
-            "imgClass": "img-center-70"
+            "imgClass": "img-center-80"
     }
 ];
 
