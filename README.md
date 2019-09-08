@@ -5,30 +5,30 @@ Practical implementation for all the design patterns
 For a quick run through, have a look at [this](http://git.ashwanik.in/practical-design-patterns/).
 
 - [Practical Design Patterns](#practical-design-patterns)
-  - [Chain of responsibility](#chain-of-responsibility)
-  - [Publisher-Subscriber](#publisher-subscriber)
-  - [Observer](#observer)
-  - [Builder](#builder)
-  - [Iterator](#iterator)
-  - [Decorator](#decorator)
-  - [Strategy](#strategy)
-- [References](#references)
+    - [Chain of responsibility](#chain-of-responsibility)
+    - [Publisher-Subscriber](#publisher-subscriber)
+    - [Observer](#observer)
+    - [Builder](#builder)
+    - [Iterator](#iterator)
+    - [Decorator](#decorator)
+    - [Strategy](#strategy)
+  - [References](#references)
 
-## [Chain of responsibility](src/main/java/in/ashwanik/pdp/cor)
+### [Chain of responsibility](http://git.ashwanik.in/practical-design-patterns/#2)
 
-## [Publisher-Subscriber](src/main/java/in/ashwanik/pdp/pub_sub)
+### [Publisher-Subscriber](http://git.ashwanik.in/practical-design-patterns/#3)
 
-## [Observer](src/main/java/in/ashwanik/pdp/observer)
+### [Observer](http://git.ashwanik.in/practical-design-patterns/#4)
 
-## [Builder](src/main/java/in/ashwanik/pdp/builder)
+### [Builder](http://git.ashwanik.in/practical-design-patterns/#5)
 
-## [Iterator](src/main/java/in/ashwanik/pdp/iterator)
+### [Iterator](http://git.ashwanik.in/practical-design-patterns/#6)
 
-## [Decorator](src/main/java/in/ashwanik/pdp/decorator)
+### [Decorator](http://git.ashwanik.in/practical-design-patterns/#7)
 
-## [Strategy](src/main/java/in/ashwanik/pdp/strategy)
+### [Strategy](http://git.ashwanik.in/practical-design-patterns/#8)
 
-# References
+## References
 
 - [Examples from Java Libraries](https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries/2707195#2707195)
 - [Refactoring.Guru](https://refactoring.guru/design-patterns)
