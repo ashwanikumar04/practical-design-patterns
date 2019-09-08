@@ -36,10 +36,10 @@ var array = [{
         "imgClass": "img-center-50"
     },
     {
-            "img": "strategy",
-            "name": "strategy",
-            "code": "strategy",
-            "imgClass": "img-center-80"
+        "img": "strategy",
+        "name": "strategy",
+        "code": "strategy",
+        "imgClass": "img-center-80"
     }
 ];
 
