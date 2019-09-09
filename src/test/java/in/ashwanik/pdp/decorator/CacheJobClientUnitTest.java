@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class TestCacheJobClient {
+public class CacheJobClientUnitTest {
     @Test
     public void testCacheGetJobs() {
         GithubJobClient client = GithubJobClient.builder()

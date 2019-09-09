@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.Mockito.mock;
 
-public class CacheServiceTest {
+public class CacheServiceUnitTest {
     private CacheService cacheService;
 
     @Before
