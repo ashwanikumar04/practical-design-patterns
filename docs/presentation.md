@@ -63,7 +63,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/singleton.png' alt='singleton' class='img-center-80'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/singleton.png' alt='singleton' class='img-center-50'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/singleton' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 

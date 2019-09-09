@@ -45,7 +45,7 @@ var array = [{
         "img": "singleton",
         "name": "singleton",
         "code": "singleton",
-        "imgClass": "img-center-80"
+        "imgClass": "img-center-50"
     }
 ];
 
