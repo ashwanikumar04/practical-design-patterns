@@ -12,6 +12,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
   - [Iterator](#iterator)
   - [Decorator](#decorator)
   - [Strategy](#strategy)
+  - [Singleton](#singleton)
 - [References](#references)
 
 ## [Chain of responsibility](http://git.ashwanik.in/practical-design-patterns/#2)
@@ -27,6 +28,9 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 ## [Decorator](http://git.ashwanik.in/practical-design-patterns/#7)
 
 ## [Strategy](http://git.ashwanik.in/practical-design-patterns/#8)
+
+## [Singleton](http://git.ashwanik.in/practical-design-patterns/#9)
+
 
 # References
 
