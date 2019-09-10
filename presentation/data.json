@@ -1,5 +1,4 @@
-[
-  {
+[{
     "img": "cor",
     "name": "Chain of responsibility",
     "code": "cor",
@@ -37,14 +36,20 @@
   },
   {
     "img": "strategy",
-    "name": "strategy",
+    "name": "Strategy",
     "code": "strategy",
     "imgClass": "img-center-80"
   },
   {
     "img": "singleton",
-    "name": "singleton",
+    "name": "Singleton",
     "code": "singleton",
+    "imgClass": "img-center-50"
+  },
+  {
+    "img": "game_loop",
+    "name": "Game Loop",
+    "code": "game_loop",
     "imgClass": "img-center-50"
   }
 ]

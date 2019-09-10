@@ -55,7 +55,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/strategy.png' alt='strategy' class='img-center-80'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/strategy.png' alt='Strategy' class='img-center-80'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/strategy' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
@@ -63,7 +63,15 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/singleton.png' alt='singleton' class='img-center-50'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/singleton.png' alt='Singleton' class='img-center-50'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/singleton' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+
+---
+
+# 
+
+<img src='http://git.ashwanik.in/practical-design-patterns/images/game_loop.png' alt='Game Loop' class='img-center-50'/>
+
+<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/game_loop' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 

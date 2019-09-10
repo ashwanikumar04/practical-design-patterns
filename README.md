@@ -17,6 +17,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
     - [Iterator](#iterator)
   - [***Other Patterns***](#other-patterns)
     - [Publisher-Subscriber](#publisher-subscriber)
+    - [Game Loop](#game-loop)
 - [References](#references)
 
 ## ***Creational Patterns***
@@ -44,6 +45,9 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 ## ***Other Patterns***
 
 ### [Publisher-Subscriber](http://git.ashwanik.in/practical-design-patterns/#3)
+
+### [Game Loop](http://git.ashwanik.in/practical-design-patterns/#10)
+
 
 # References
 
