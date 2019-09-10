@@ -1,0 +1,50 @@
+[
+  {
+    "img": "cor",
+    "name": "Chain of responsibility",
+    "code": "cor",
+    "imgClass": "img-center-50"
+  },
+  {
+    "img": "pub_sub",
+    "name": "Publisher Subscriber",
+    "code": "pub_sub",
+    "imgClass": "img-center-80"
+  },
+  {
+    "img": "observer",
+    "name": "Observer",
+    "code": "observer",
+    "imgClass": "img-center-80"
+  },
+  {
+    "img": "builder",
+    "name": "Builder",
+    "code": "builder",
+    "imgClass": "img-center-70"
+  },
+  {
+    "img": "iterator",
+    "name": "Iterator",
+    "code": "iterator",
+    "imgClass": "img-center-50"
+  },
+  {
+    "img": "decorator",
+    "name": "Decorator",
+    "code": "decorator",
+    "imgClass": "img-center-50"
+  },
+  {
+    "img": "strategy",
+    "name": "strategy",
+    "code": "strategy",
+    "imgClass": "img-center-80"
+  },
+  {
+    "img": "singleton",
+    "name": "singleton",
+    "code": "singleton",
+    "imgClass": "img-center-50"
+  }
+]
