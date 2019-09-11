@@ -9,7 +9,7 @@ generated.push(text);
 for (var index = 0; index < array.length; index++) {
     text =
         "# " + "\n\n" +
-        "<img src='http://git.ashwanik.in/practical-design-patterns/images/" + array[index].img + ".png' " +
+        "<img src='http://git.ashwanik.in/practical-design-patterns/images/" + array[index].img + ".svg' " +
         "alt='" + array[index].name + "' class='" + array[index].imgClass + "'/>\n\n" +
         "<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/" +
         array[index].code + "' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>" +

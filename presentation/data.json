@@ -1,4 +1,5 @@
-[{
+[
+  {
     "img": "cor",
     "name": "Chain of responsibility",
     "code": "cor",
@@ -50,6 +51,12 @@
     "img": "game_loop",
     "name": "Game Loop",
     "code": "game_loop",
+    "imgClass": "img-center-50"
+  },
+  {
+    "img": "prototype",
+    "name": "Prototype",
+    "code": "prototype",
     "imgClass": "img-center-50"
   }
 ]
