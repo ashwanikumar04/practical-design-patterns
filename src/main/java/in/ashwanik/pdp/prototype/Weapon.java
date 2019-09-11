@@ -2,11 +2,8 @@ package in.ashwanik.pdp.prototype;
 
 import lombok.Getter;
 
-import java.io.Serializable;
-
 @Getter
-public class Weapon extends CollectibleItem implements Serializable {
-    private static final long serialVersionUID = 6185237117225847964L;
+public class Weapon extends CollectibleItem {
     private int minimumDamage;
     private int maximumDamage;
 

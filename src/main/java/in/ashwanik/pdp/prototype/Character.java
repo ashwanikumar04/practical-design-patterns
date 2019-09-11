@@ -3,12 +3,10 @@ package in.ashwanik.pdp.prototype;
 
 import lombok.Getter;
 
-import java.io.Serializable;
 import java.util.List;
 
 @Getter
-public class Character implements Serializable {
-    private static final long serialVersionUID = 2166181694916422504L;
+public class Character {
     private String name;
     private String description;
     private List<Weapon> weapons;

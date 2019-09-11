@@ -2,11 +2,8 @@ package in.ashwanik.pdp.prototype;
 
 import lombok.Getter;
 
-import java.io.Serializable;
-
 @Getter
-public class Item implements Serializable {
-    private static final long serialVersionUID = 4352190977992036193L;
+public class Item {
     private String name;
     private String description;
 
