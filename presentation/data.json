@@ -27,7 +27,7 @@
     "img": "iterator",
     "name": "Iterator",
     "code": "iterator",
-    "imgClass": "img-center-50"
+    "imgClass": "img-center-80"
   },
   {
     "img": "decorator",
@@ -57,6 +57,6 @@
     "img": "prototype",
     "name": "Prototype",
     "code": "prototype",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-80"
   }
 ]
