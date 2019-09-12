@@ -1,5 +1,4 @@
-[
-  {
+[{
     "img": "cor",
     "name": "Chain of responsibility",
     "code": "cor",
@@ -57,6 +56,12 @@
     "img": "prototype",
     "name": "Prototype",
     "code": "prototype",
+    "imgClass": "img-center-70"
+  },
+  {
+    "img": "factory_method",
+    "name": "Factory Method",
+    "code": "factory_method",
     "imgClass": "img-center-70"
   }
 ]

@@ -9,6 +9,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
     - [Builder](#builder)
     - [Singleton](#singleton)
     - [Prototype](#prototype)
+    - [Factory Method](#factory-method)
   - [***Structural Patterns***](#structural-patterns)
     - [Decorator](#decorator)
   - [***Behavioral Patterns***](#behavioral-patterns)
@@ -28,6 +29,8 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 ### [Singleton](http://git.ashwanik.in/practical-design-patterns/#9)
 
 ### [Prototype](http://git.ashwanik.in/practical-design-patterns/#11)
+
+### [Factory Method](http://git.ashwanik.in/practical-design-patterns/#12)
 
 
 ## ***Structural Patterns***
