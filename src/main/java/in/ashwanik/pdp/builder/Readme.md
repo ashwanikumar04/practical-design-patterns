@@ -5,7 +5,7 @@
 The pattern allows us to produce different types and representations of an object using the same construction code.
 
 
-![Builder](/docs/images/builder.png)
+![Builder](/docs/images/builder.svg)
 
 
 ## Examples from Java core libraries

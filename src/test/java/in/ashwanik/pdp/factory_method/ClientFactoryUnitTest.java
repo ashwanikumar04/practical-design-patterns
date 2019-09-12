@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.factory;
+package in.ashwanik.pdp.factory_method;
 
 import okhttp3.OkHttpClient;
 import org.junit.Test;

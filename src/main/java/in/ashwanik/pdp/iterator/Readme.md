@@ -2,7 +2,7 @@
 
 **Iterator** is a behavioral design pattern that lets us traverse elements of a collection static or dynamic (fetched from database or internet) without exposing its underlying implementation.
 
-![Iterator](/docs/images/iterator.png)
+![Iterator](/docs/images/iterator.svg)
 
 
 ## Examples from Java core libraries

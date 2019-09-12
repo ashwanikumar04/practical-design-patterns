@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.factory;
+package in.ashwanik.pdp.factory_method;
 
 import lombok.Getter;
 import lombok.Setter;

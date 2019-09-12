@@ -2,7 +2,7 @@
 
 **Strategy** is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable inside original context object.
 
-![Strategy](/docs/images/strategy.png)
+![Strategy](/docs/images/strategy.svg)
 
 
 ### Examples from Java core libraries
