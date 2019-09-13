@@ -6,53 +6,42 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 
 - [Practical Design Patterns](#practical-design-patterns)
   - [***Creational Patterns***](#creational-patterns)
-    - [Builder](#builder)
-    - [Singleton](#singleton)
-    - [Prototype](#prototype)
-    - [Factory Method](#factory-method)
   - [***Structural Patterns***](#structural-patterns)
-    - [Decorator](#decorator)
   - [***Behavioral Patterns***](#behavioral-patterns)
-    - [Chain of responsibility](#chain-of-responsibility)
-    - [Observer](#observer)
-    - [Strategy](#strategy)
-    - [Iterator](#iterator)
   - [***Other Patterns***](#other-patterns)
-    - [Publisher-Subscriber](#publisher-subscriber)
-    - [Game Loop](#game-loop)
 - [References](#references)
 
 ## ***Creational Patterns***
 
-### [Builder](http://git.ashwanik.in/practical-design-patterns/#5)
+- ### [Builder](http://git.ashwanik.in/practical-design-patterns/#5)
 
-### [Singleton](http://git.ashwanik.in/practical-design-patterns/#9)
+- ### [Singleton](http://git.ashwanik.in/practical-design-patterns/#9)
 
-### [Prototype](http://git.ashwanik.in/practical-design-patterns/#11)
+- ### [Prototype](http://git.ashwanik.in/practical-design-patterns/#11)
 
-### [Factory Method](http://git.ashwanik.in/practical-design-patterns/#12)
+- ### [Factory Method](http://git.ashwanik.in/practical-design-patterns/#12)
 
 
 ## ***Structural Patterns***
 
-### [Decorator](http://git.ashwanik.in/practical-design-patterns/#7)
+- ### [Decorator](http://git.ashwanik.in/practical-design-patterns/#7)
 
 ## ***Behavioral Patterns***
 
-### [Chain of responsibility](http://git.ashwanik.in/practical-design-patterns/#2)
+- ### [Chain of responsibility](http://git.ashwanik.in/practical-design-patterns/#2)
 
-### [Observer](http://git.ashwanik.in/practical-design-patterns/#4)
+- ### [Observer](http://git.ashwanik.in/practical-design-patterns/#4)
 
-### [Strategy](http://git.ashwanik.in/practical-design-patterns/#8)
+- ### [Strategy](http://git.ashwanik.in/practical-design-patterns/#8)
 
-### [Iterator](http://git.ashwanik.in/practical-design-patterns/#6)
+- ### [Iterator](http://git.ashwanik.in/practical-design-patterns/#6)
 
 
 ## ***Other Patterns***
 
-### [Publisher-Subscriber](http://git.ashwanik.in/practical-design-patterns/#3)
+- ### [Publisher-Subscriber](http://git.ashwanik.in/practical-design-patterns/#3)
 
-### [Game Loop](http://git.ashwanik.in/practical-design-patterns/#10)
+- ### [Game Loop](http://git.ashwanik.in/practical-design-patterns/#10)
 
 
 # References
