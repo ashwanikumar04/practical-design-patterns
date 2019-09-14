@@ -95,7 +95,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/proxy.svg' alt='Proxy' class='img-center-70'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/proxy.svg' alt='Proxy' class='img-center-50'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/proxy' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
