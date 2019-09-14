@@ -25,6 +25,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 ## ***Structural Patterns***
 
 - ### [Decorator](http://git.ashwanik.in/practical-design-patterns/#7)
+- ### [Proxy](http://git.ashwanik.in/practical-design-patterns/#13)
 
 ## ***Behavioral Patterns***
 

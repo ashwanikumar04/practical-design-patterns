@@ -63,5 +63,11 @@
     "name": "Factory Method",
     "code": "factory_method",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "proxy",
+    "name": "Proxy",
+    "code": "proxy",
+    "imgClass": "img-center-70"
   }
 ]
