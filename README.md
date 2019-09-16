@@ -43,7 +43,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - ### [Publisher-Subscriber](http://git.ashwanik.in/practical-design-patterns/#3)
 
 - ### [Game Loop](http://git.ashwanik.in/practical-design-patterns/#10)
-- 
+
 - ### [Dependency Injection](http://git.ashwanik.in/practical-design-patterns/#14)
 
 
