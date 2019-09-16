@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.dependecy_injection;
+package in.ashwanik.pdp.dependency_injection;
 
 import lombok.Getter;
 import okhttp3.OkHttpClient;

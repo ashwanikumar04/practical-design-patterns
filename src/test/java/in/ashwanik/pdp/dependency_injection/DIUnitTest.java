@@ -1,14 +1,11 @@
-package in.ashwanik.pdp;
+package in.ashwanik.pdp.dependency_injection;
 
-import in.ashwanik.pdp.dependecy_injection.App;
-import in.ashwanik.pdp.dependecy_injection.FileDownloader;
-import in.ashwanik.pdp.dependecy_injection.Injector;
 import okhttp3.OkHttpClient;
 import org.junit.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class dependency_injection {
+public class DIUnitTest {
     @Test
     public void testDI() {
         App app = new App();

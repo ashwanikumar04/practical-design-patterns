@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.dependecy_injection;
+package in.ashwanik.pdp.dependency_injection;
 
 import java.util.HashMap;
 import java.util.Map;

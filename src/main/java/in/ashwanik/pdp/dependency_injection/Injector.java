@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.dependecy_injection;
+package in.ashwanik.pdp.dependency_injection;
 
 public class Injector {
     private Linker linker = new Linker();
