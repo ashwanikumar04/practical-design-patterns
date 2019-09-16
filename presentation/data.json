@@ -69,5 +69,11 @@
     "name": "Proxy",
     "code": "proxy",
     "imgClass": "img-center-50"
+  },
+  {
+    "img": "dependency_injection",
+    "name": "Dependency Injection",
+    "code": "dependency_injection",
+    "imgClass": "img-center-50"
   }
 ]
