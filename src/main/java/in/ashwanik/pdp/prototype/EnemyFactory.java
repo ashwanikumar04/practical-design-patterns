@@ -9,7 +9,7 @@ import static in.ashwanik.pdp.prototype.DarkElf.DARK_ELF;
 import static in.ashwanik.pdp.prototype.Orc.ORC;
 import static in.ashwanik.pdp.prototype.Uruk.URUK;
 
-public class EnemyFactory {
+class EnemyFactory {
     private static EnemyFactory instance;
     private static String[] enemyTypes = {ORC, URUK, DARK_ELF};
     private Random random;
@@ -24,11 +24,11 @@ public class EnemyFactory {
         enemies.put(DARK_ELF, new DarkElf(DARK_ELF, "A deadly dark elf", 100, Collections.singletonList(Armoury.getRandomWeapon())));
     }
 
-    public static void init() {
+    static void init() {
         instance = new EnemyFactory();
     }
 
-    public static Enemy getRandomEnemy() {
+    static Enemy getRandomEnemy() {
         EnemyFactory enemyFactory = instance;
         return enemyFactory.enemies.get(enemyTypes[enemyFactory.random.nextInt(enemyTypes.length)]).newInstance();
     }

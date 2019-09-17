@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.prototype;
+package in.ashwanik.pdp.abstract_factory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ class Armoury {
         return armoury;
     }
 
-    public static void fill() {
+    static void fill() {
         Armoury armoury = new Armoury();
         Armoury.armoury = armoury;
         armoury.weapons = new ArrayList<>();

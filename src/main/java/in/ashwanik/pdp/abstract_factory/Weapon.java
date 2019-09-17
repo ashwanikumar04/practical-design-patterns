@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.prototype;
+package in.ashwanik.pdp.abstract_factory;
 
 import lombok.Getter;
 

@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @Getter
-public class Game {
+class Game {
     private List<Character> characters;
 
-    public Game(int numberOfEnemies) {
+    Game(int numberOfEnemies) {
         Armoury.fill();
         EnemyFactory.init();
         characters = new ArrayList<>(numberOfEnemies);
