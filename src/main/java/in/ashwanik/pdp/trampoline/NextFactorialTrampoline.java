@@ -6,7 +6,6 @@ import java.util.function.Supplier;
 
 class NextFactorialTrampoline implements Trampoline<BigDecimal> {
 
-
     private final Supplier<Trampoline<BigDecimal>> next;
 
     NextFactorialTrampoline(Supplier<Trampoline<BigDecimal>> next) {

@@ -115,3 +115,11 @@ class: center, middle
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/abstract_factory' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
+---
+
+# 
+
+<img src='http://git.ashwanik.in/practical-design-patterns/images/trampoline.svg' alt='Trampoline' class='img-center-50'/>
+
+<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/trampoline' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+

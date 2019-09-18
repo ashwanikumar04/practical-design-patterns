@@ -81,5 +81,11 @@
     "name": "Abstract Factory",
     "code": "abstract_factory",
     "imgClass": "img-center-80"
+  },
+  {
+    "img": "trampoline",
+    "name": "Trampoline",
+    "code": "trampoline",
+    "imgClass": "img-center-50"
   }
 ]
