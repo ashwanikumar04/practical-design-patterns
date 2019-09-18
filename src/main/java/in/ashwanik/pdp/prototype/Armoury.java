@@ -19,7 +19,7 @@ class Armoury {
         return armoury;
     }
 
-    public static void fill() {
+    static void fill() {
         Armoury armoury = new Armoury();
         Armoury.armoury = armoury;
         armoury.weapons = new ArrayList<>();
@@ -33,11 +33,11 @@ class Armoury {
         return get().weapons;
     }
 
-    public static Weapon getRandomWeapon() {
+    static Weapon getRandomWeapon() {
         return get().weapons.get(random.nextInt(get().numberOfWeapons()));
     }
 
-    public int numberOfWeapons() {
+    int numberOfWeapons() {
         return this.weapons.size();
     }
 }

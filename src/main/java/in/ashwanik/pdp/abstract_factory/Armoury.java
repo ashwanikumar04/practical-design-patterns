@@ -29,15 +29,15 @@ class Armoury {
         armoury.weapons.add(new SpikeHammer("spike hammer", "Good for brutal attacks", 300, 30, 50));
     }
 
-    public static List<Weapon> getWeapons() {
+    static List<Weapon> getWeapons() {
         return get().weapons;
     }
 
-    public static Weapon getRandomWeapon() {
+    static Weapon getRandomWeapon() {
         return get().weapons.get(random.nextInt(get().numberOfWeapons()));
     }
 
-    public int numberOfWeapons() {
+    int numberOfWeapons() {
         return this.weapons.size();
     }
 }
