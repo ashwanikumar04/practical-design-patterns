@@ -9,13 +9,15 @@ import static org.assertj.core.api.Java6Assertions.assertThatThrownBy;
 
 public class TrampolineUnitTest {
 
+    private static final int VAL = 1_00_000;
+
     @Test
     public void testTrampoline() {
         App app = new App();
-        assertThatThrownBy(() -> app.calculateFactorialRecursive(new BigDecimal(100000))).isInstanceOf(StackOverflowError.class);
-        BigDecimal value = app.calculateFactorialTrampoline(new BigDecimal(100000), BigDecimal.ONE).compute();
+        assertThatThrownBy(() -> app.calculateFactorialRecursive(new BigDecimal(VAL))).isInstanceOf(StackOverflowError.class);
+        BigDecimal value = app.calculateFactorialTrampoline(new BigDecimal(VAL), BigDecimal.ONE).compute();
         assertThat(value).isNotZero();
-        assertThat(app.calculateFactorialTrampolineCompact(new BigDecimal(100000), BigDecimal.ONE).get())
+        assertThat(app.calculateFactorialTrampolineCompact(new BigDecimal(VAL), BigDecimal.ONE).get())
                 .isEqualTo(value);
 
     }
