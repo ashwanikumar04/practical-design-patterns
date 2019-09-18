@@ -75,5 +75,11 @@
     "name": "Dependency Injection",
     "code": "dependency_injection",
     "imgClass": "img-center-50"
+  },
+  {
+    "img": "abstract_factory",
+    "name": "Abstract Factory",
+    "code": "abstract_factory",
+    "imgClass": "img-center-50"
   }
 ]
