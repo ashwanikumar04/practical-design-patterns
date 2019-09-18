@@ -111,7 +111,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/abstract_factory.svg' alt='Abstract Factory' class='img-center-50'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/abstract_factory.svg' alt='Abstract Factory' class='img-center-70'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/abstract_factory' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
