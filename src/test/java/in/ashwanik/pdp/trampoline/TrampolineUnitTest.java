@@ -13,6 +13,10 @@ public class TrampolineUnitTest {
     public void testTrampoline() {
         App app = new App();
         assertThatThrownBy(() -> app.calculateFactorialRecursive(new BigDecimal(100000))).isInstanceOf(StackOverflowError.class);
-        assertThat(app.calculateFactorialTrampoline(new BigDecimal(100000), BigDecimal.ONE).compute()).isNotZero();
+        BigDecimal value = app.calculateFactorialTrampoline(new BigDecimal(100000), BigDecimal.ONE).compute();
+        assertThat(value).isNotZero();
+        assertThat(app.calculateFactorialTrampolineCompact(new BigDecimal(100000), BigDecimal.ONE).get())
+                .isEqualTo(value);
+
     }
 }
