@@ -87,5 +87,11 @@
     "name": "Trampoline",
     "code": "trampoline",
     "imgClass": "img-center-50"
+  },
+  {
+    "img": "adapter",
+    "name": "Adapter",
+    "code": "adapter",
+    "imgClass": "img-center-50"
   }
 ]
