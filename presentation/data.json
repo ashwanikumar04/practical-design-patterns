@@ -95,9 +95,9 @@
     "imgClass": "img-center-30"
   },
   {
-    "img": "adapter",
-    "name": "Adapter",
-    "code": "adapter",
+    "img": "bridge",
+    "name": "Bridge",
+    "code": "bridge",
     "imgClass": "img-center-50"
   }
 ]

@@ -135,7 +135,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/adapter.svg' alt='Adapter' class='img-center-50'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/bridge.svg' alt='Bridge' class='img-center-50'/>
 
-<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/adapter' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/bridge' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
