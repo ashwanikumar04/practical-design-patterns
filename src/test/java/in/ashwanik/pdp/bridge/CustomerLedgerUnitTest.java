@@ -10,8 +10,9 @@ public class CustomerLedgerUnitTest {
     public void testBridge() {
         DataProvider<Customer> customerDataProvider = new RedisProvider<>();
         CustomerRepository customerRepository = new CustomerRepositoryImpl(customerDataProvider);
-
-        Customer customer = customerRepository.create(Customer.builder().email("email.com").build());
+        Customer customer = new Customer();
+        customer.setEmail("test@temail.com");
+        customer = customerRepository.create(customer);
         assertThat(customer.getCreatedTime()).isNotNull();
     }
 }
