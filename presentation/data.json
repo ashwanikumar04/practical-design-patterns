@@ -99,5 +99,11 @@
     "name": "Bridge",
     "code": "bridge",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "null_object",
+    "name": "Null Object",
+    "code": "null_object",
+    "imgClass": "img-center-30"
   }
 ]

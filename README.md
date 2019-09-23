@@ -40,6 +40,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Game Loop](http://git.ashwanik.in/practical-design-patterns/#10)
 - #### [Dependency Injection](http://git.ashwanik.in/practical-design-patterns/#14)
 - #### [Trampoline](http://git.ashwanik.in/practical-design-patterns/#16)
+- #### [Null Object](http://git.ashwanik.in/practical-design-patterns/#19)
 
 
 # References
