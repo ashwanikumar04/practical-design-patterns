@@ -1,4 +1,4 @@
-package in.ashwanik.pdp.strategy;
+package in.ashwanik.pdp.null_object;
 
 interface RedisClient {
     void save(String key, String value);
