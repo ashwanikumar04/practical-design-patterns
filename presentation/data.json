@@ -93,5 +93,11 @@
     "name": "Adapter",
     "code": "adapter",
     "imgClass": "img-center-30"
+  },
+  {
+    "img": "adapter",
+    "name": "Adapter",
+    "code": "adapter",
+    "imgClass": "img-center-50"
   }
 ]
