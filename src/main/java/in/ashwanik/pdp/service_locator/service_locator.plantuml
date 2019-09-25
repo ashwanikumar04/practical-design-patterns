@@ -1,0 +1,60 @@
+@startuml
+
+title __SERVICE_LOCATOR's Class Diagram__\n
+
+  namespace in.ashwanik.pdp.service_locator {
+    interface in.ashwanik.pdp.service_locator.Cache {
+        {abstract} + get()
+        {abstract} + put()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.service_locator {
+    class in.ashwanik.pdp.service_locator.NullCache {
+        + get()
+        + put()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.service_locator {
+    class in.ashwanik.pdp.service_locator.RedisCache {
+        + RedisCache()
+        + get()
+        + put()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.service_locator {
+    interface in.ashwanik.pdp.service_locator.RedisClient {
+        {abstract} + get()
+        {abstract} + save()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.service_locator {
+    class in.ashwanik.pdp.service_locator.ServiceLocator {
+        {static} - locator : ServiceLocator
+        + getCache()
+        {static} + getInstance()
+        + setCache()
+    }
+  }
+  
+
+  in.ashwanik.pdp.service_locator.NullCache .up.|> in.ashwanik.pdp.service_locator.Cache
+  in.ashwanik.pdp.service_locator.RedisCache .up.|> in.ashwanik.pdp.service_locator.Cache
+  in.ashwanik.pdp.service_locator.RedisCache o-- in.ashwanik.pdp.service_locator.RedisClient : redisClient
+  in.ashwanik.pdp.service_locator.ServiceLocator o-- in.ashwanik.pdp.service_locator.Cache : cache
+  in.ashwanik.pdp.service_locator.ServiceLocator o-- in.ashwanik.pdp.service_locator.Cache : nullCache
+
+
+right footer
+
+
+endfooter
+
+@enduml

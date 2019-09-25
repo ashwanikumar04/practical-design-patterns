@@ -1,0 +1,216 @@
+@startuml
+
+title __ABSTRACT_FACTORY's Class Diagram__\n
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.AncientArena {
+        + createCollectibles()
+        + createEnemy()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.AncientCollectibles {
+        + getItems()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    interface in.ashwanik.pdp.abstract_factory.Arena {
+        {abstract} + createCollectibles()
+        {abstract} + createEnemy()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    enum ArenaType {
+      ANCIENT
+      MEDIEVAL
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Armoury {
+        {static} - armoury : Armoury
+        {static} - random : Random
+        - weapons : List<Weapon>
+        {static} ~ fill()
+        {static} ~ getRandomWeapon()
+        {static} ~ getWeapons()
+        ~ numberOfWeapons()
+        - Armoury()
+        {static} - get()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.CollectibleItem {
+        - weight : int
+        + getWeight()
+        ~ CollectibleItem()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    interface in.ashwanik.pdp.abstract_factory.Collectibles {
+        {abstract} + getItems()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Dagger {
+        ~ Dagger()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    abstract class in.ashwanik.pdp.abstract_factory.Enemy {
+        - description : String
+        - experience : int
+        - health : int
+        - name : String
+        - weapons : List<Weapon>
+        + getDescription()
+        + getExperience()
+        + getHealth()
+        + getName()
+        + getWeapons()
+        ~ Enemy()
+        ~ Enemy()
+        ~ attack()
+        ~ changeHealth()
+        ~ hasWeapon()
+        ~ isDead()
+        {abstract} ~ newInstance()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Game {
+        - collectibles : List<CollectibleItem>
+        + getCollectibles()
+        + getEnemy()
+        ~ Game()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Game.ArenaFactory {
+        {static} ~ getArena()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Item {
+        - description : String
+        - name : String
+        + getDescription()
+        + getName()
+        ~ Item()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.LongSword {
+        ~ LongSword()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Mace {
+        ~ Mace()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.MedievalArena {
+        + createCollectibles()
+        + createEnemy()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.MedievalCollectibles {
+        + getItems()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Orc {
+        {static} ~ ORC : String
+        ~ Orc()
+        ~ Orc()
+        ~ newInstance()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.SpikeHammer {
+        ~ SpikeHammer()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Uruk {
+        {static} ~ URUK : String
+        + newInstance()
+        ~ Uruk()
+        ~ Uruk()
+    }
+  }
+  
+
+  namespace in.ashwanik.pdp.abstract_factory {
+    class in.ashwanik.pdp.abstract_factory.Weapon {
+        - maximumDamage : int
+        - minimumDamage : int
+        + getMaximumDamage()
+        + getMinimumDamage()
+        + toString()
+        ~ Weapon()
+    }
+  }
+  
+
+  in.ashwanik.pdp.abstract_factory.AncientArena .up.|> in.ashwanik.pdp.abstract_factory.Arena
+  in.ashwanik.pdp.abstract_factory.AncientCollectibles .up.|> in.ashwanik.pdp.abstract_factory.Collectibles
+  in.ashwanik.pdp.abstract_factory.CollectibleItem -up-|> in.ashwanik.pdp.abstract_factory.Item
+  in.ashwanik.pdp.abstract_factory.Dagger -up-|> in.ashwanik.pdp.abstract_factory.Weapon
+  in.ashwanik.pdp.abstract_factory.Game o-- in.ashwanik.pdp.abstract_factory.Enemy : enemy
+  in.ashwanik.pdp.abstract_factory.Game +-down- in.ashwanik.pdp.abstract_factory.Game.ArenaFactory
+  in.ashwanik.pdp.abstract_factory.LongSword -up-|> in.ashwanik.pdp.abstract_factory.Weapon
+  in.ashwanik.pdp.abstract_factory.Mace -up-|> in.ashwanik.pdp.abstract_factory.Weapon
+  in.ashwanik.pdp.abstract_factory.MedievalArena .up.|> in.ashwanik.pdp.abstract_factory.Arena
+  in.ashwanik.pdp.abstract_factory.MedievalCollectibles .up.|> in.ashwanik.pdp.abstract_factory.Collectibles
+  in.ashwanik.pdp.abstract_factory.Orc -up-|> in.ashwanik.pdp.abstract_factory.Enemy
+  in.ashwanik.pdp.abstract_factory.SpikeHammer -up-|> in.ashwanik.pdp.abstract_factory.Weapon
+  in.ashwanik.pdp.abstract_factory.Uruk -up-|> in.ashwanik.pdp.abstract_factory.Enemy
+  in.ashwanik.pdp.abstract_factory.Weapon -up-|> in.ashwanik.pdp.abstract_factory.CollectibleItem
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
