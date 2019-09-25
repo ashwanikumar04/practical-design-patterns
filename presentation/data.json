@@ -47,6 +47,12 @@
     "imgClass": "img-center-50"
   },
   {
+    "img": "service_locator",
+    "name": "Service Locator",
+    "code": "service_locator",
+    "imgClass": "img-center-30"
+  },
+  {
     "img": "game_loop",
     "name": "Game Loop",
     "code": "game_loop",
@@ -104,12 +110,6 @@
     "img": "null_object",
     "name": "Null Object",
     "code": "null_object",
-    "imgClass": "img-center-30"
-  },
-  {
-    "img": "service_locator",
-    "name": "Service Locator",
-    "code": "service_locator",
     "imgClass": "img-center-30"
   }
 ]

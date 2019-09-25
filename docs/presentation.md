@@ -71,6 +71,14 @@ class: center, middle
 
 # 
 
+<img src='http://git.ashwanik.in/practical-design-patterns/images/service_locator.svg' alt='Service Locator' class='img-center-30'/>
+
+<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/service_locator' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
+
+---
+
+# 
+
 <img src='http://git.ashwanik.in/practical-design-patterns/images/game_loop.svg' alt='Game Loop' class='img-center-50'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/game_loop' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
@@ -146,12 +154,4 @@ class: center, middle
 <img src='http://git.ashwanik.in/practical-design-patterns/images/null_object.svg' alt='Null Object' class='img-center-30'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/null_object' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
-
----
-
-# 
-
-<img src='http://git.ashwanik.in/practical-design-patterns/images/service_locator.svg' alt='Service Locator' class='img-center-30'/>
-
-<div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/service_locator' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
