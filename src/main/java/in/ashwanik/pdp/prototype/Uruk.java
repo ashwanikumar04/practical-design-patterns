@@ -5,7 +5,10 @@ import java.util.List;
 class Uruk extends Enemy {
     static final String URUK = "Uruk";
 
-    Uruk(String name, String description, int health, List<Weapon> weapons) {
+    Uruk(String name,
+         String description,
+         int health,
+         List<Weapon> weapons) {
         super(name, description, health, weapons);
     }
 

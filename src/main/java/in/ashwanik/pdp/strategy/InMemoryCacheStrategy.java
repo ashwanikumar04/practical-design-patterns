@@ -11,7 +11,8 @@ public class InMemoryCacheStrategy implements CacheStrategy {
     }
 
     @Override
-    public CacheType save(String key, String value) {
+    public CacheType save(String key,
+                          String value) {
         cache.putIfAbsent(key, value);
         return CacheType.IN_MEMORY;
     }

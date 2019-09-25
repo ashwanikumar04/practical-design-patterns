@@ -6,7 +6,8 @@ import java.util.Map;
 public class Linker {
     private Map<Class<?>, Object> registered = new HashMap<>();
 
-    public <T> void register(Class<T> key, T instance) {
+    public <T> void register(Class<T> key,
+                             T instance) {
         registered.put(key, instance);
     }
 

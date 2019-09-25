@@ -8,7 +8,10 @@ import java.util.List;
 abstract class Enemy extends Character {
     private int experience;
 
-    Enemy(String name, String description, int health, List<Weapon> weapons) {
+    Enemy(String name,
+          String description,
+          int health,
+          List<Weapon> weapons) {
         super(name, description, health, weapons);
         experience = health;
     }

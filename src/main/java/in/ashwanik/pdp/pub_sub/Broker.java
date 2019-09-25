@@ -18,7 +18,8 @@ class Broker {
         return subscribers.getOrDefault(topic, Collections.emptyList());
     }
 
-    void addSubscriber(String topic, Subscriber subscriber) {
+    void addSubscriber(String topic,
+                       Subscriber subscriber) {
         keyNotEmpty(topic);
         objectNotNull(subscriber);
         subscribers.compute(topic, (k, v) -> {
@@ -28,7 +29,8 @@ class Broker {
         });
     }
 
-    void removeSubscriber(String topic, Subscriber subscriber) {
+    void removeSubscriber(String topic,
+                          Subscriber subscriber) {
         keyNotEmpty(topic);
         objectNotNull(subscriber);
         subscribers.compute(topic, (k, v) -> {

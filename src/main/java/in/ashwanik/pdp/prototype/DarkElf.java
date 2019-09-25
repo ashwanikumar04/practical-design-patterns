@@ -5,7 +5,10 @@ import java.util.List;
 class DarkElf extends Enemy {
     static final String DARK_ELF = "DarkElf";
 
-    DarkElf(String name, String description, int health, List<Weapon> weapons) {
+    DarkElf(String name,
+            String description,
+            int health,
+            List<Weapon> weapons) {
         super(name, description, health, weapons);
     }
 

@@ -6,5 +6,6 @@ import in.ashwanik.pdp.common.http.RestClient;
 import java.util.List;
 
 public interface GithubJobClientContract {
-    List<GithubJob> getJobs(RestClient restClient, RequestParam requestParam);
+    List<GithubJob> getJobs(RestClient restClient,
+                            RequestParam requestParam);
 }

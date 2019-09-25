@@ -6,7 +6,8 @@ import java.io.OutputStream;
 
 class ConsoleLogger extends AbstractLogger {
 
-    ConsoleLogger(OutputStream outputStream, int level) {
+    ConsoleLogger(OutputStream outputStream,
+                  int level) {
         super(outputStream, level);
     }
 

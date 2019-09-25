@@ -15,12 +15,15 @@ public class CacheServiceImpl implements CacheService {
     }
 
     @Override
-    public CacheType save(String key, String value, CacheType cacheType) {
+    public CacheType save(String key,
+                          String value,
+                          CacheType cacheType) {
         return strategies.get(cacheType).save(key, value);
     }
 
     @Override
-    public String get(String key, CacheType cacheType) {
+    public String get(String key,
+                      CacheType cacheType) {
         return strategies.get(cacheType).get(key);
     }
 }

@@ -15,9 +15,16 @@ public class RequestParam extends RestClientParam {
      */
     private String url;
 
-    private RequestParam(String url, Map<String, String> headers, Map<String, String> queryParams, Integer timeout) {
+    private RequestParam(String url,
+                         Map<String, String> headers,
+                         Map<String, String> queryParams,
+                         Integer timeout) {
         super(timeout, headers, queryParams);
         this.url = getUrlWithQueryParams(url);
+    }
+
+    public static RequestParamsBuilder paramsBuilder() {
+        return new RequestParamsBuilder();
     }
 
     private String getUrlWithQueryParams(String url) {
@@ -29,10 +36,6 @@ public class RequestParam extends RestClientParam {
             return builder.build().toString();
         }
         return url;
-    }
-
-    public static RequestParamsBuilder paramsBuilder() {
-        return new RequestParamsBuilder();
     }
 
     public static class RequestParamsBuilder {

@@ -10,7 +10,8 @@ import java.io.UncheckedIOException;
 public class DocumentWriter {
     private JsonWriter jsonWriter;
 
-    public void save(OutputStream outputStream, byte[] data) {
+    public void save(OutputStream outputStream,
+                     byte[] data) {
         try {
             jsonWriter.write(outputStream, data);
         } catch (IOException e) {

@@ -20,7 +20,8 @@ public class GithubJobClient {
     private String baseUrl;
     private GithubJobClientContract githubJobClientContract;
 
-    private GithubJobClient(RestClient restClient, GithubJobClientBuilder githubJobClientBuilder) {
+    private GithubJobClient(RestClient restClient,
+                            GithubJobClientBuilder githubJobClientBuilder) {
         this.restClient = restClient;
         this.githubJobClientContract = githubJobClientBuilder.clientContract;
         this.baseUrl = githubJobClientBuilder.baseUrl;

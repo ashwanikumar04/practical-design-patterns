@@ -13,7 +13,9 @@ public class Game {
     @Getter
     private int currentMonsterCount;
 
-    public Game(int numberOfMonsters, int dieMovesForMonsters, int monsterCountToFinish) {
+    public Game(int numberOfMonsters,
+                int dieMovesForMonsters,
+                int monsterCountToFinish) {
         this.monsterCountToFinish = monsterCountToFinish;
         gameObjects = new ArrayList<>(numberOfMonsters);
         for (int index = 0; index < numberOfMonsters; index++) {

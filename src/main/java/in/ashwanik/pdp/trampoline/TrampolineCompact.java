@@ -1,16 +1,6 @@
 package in.ashwanik.pdp.trampoline;
 
 public interface TrampolineCompact<T> {
-    T get();
-
-    default boolean complete() {
-        return true;
-    }
-
-    default TrampolineCompact<T> next() {
-        return this;
-    }
-
     static <T> TrampolineCompact<T> finish(T value) {
         return () -> value;
     }
@@ -36,5 +26,15 @@ public interface TrampolineCompact<T> {
                 return next.get();
             }
         };
+    }
+
+    T get();
+
+    default boolean complete() {
+        return true;
+    }
+
+    default TrampolineCompact<T> next() {
+        return this;
     }
 }

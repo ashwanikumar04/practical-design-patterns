@@ -39,7 +39,8 @@ public class Json {
      * @param tClass     Class of the type
      * @return De-serialized object
      */
-    public static <T> T deserialize(String jsonString, Class<T> tClass) {
+    public static <T> T deserialize(String jsonString,
+                                    Class<T> tClass) {
         if (!isValid(jsonString)) {
             return null;
         }
@@ -54,7 +55,8 @@ public class Json {
      * @param type Type of the object
      * @return List of converted object
      */
-    public static <T> List<T> deserializeList(String data, Type type) {
+    public static <T> List<T> deserializeList(String data,
+                                              Type type) {
         if (!isValid(data)) {
             return Collections.emptyList();
         }

@@ -11,7 +11,8 @@ class RedisCache implements Cache {
     }
 
     @Override
-    public void put(String key, String value) {
+    public void put(String key,
+                    String value) {
         redisClient.save(key, value);
     }
 

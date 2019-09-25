@@ -6,7 +6,8 @@ import java.io.OutputStream;
 
 class FileLogger extends AbstractLogger {
 
-    FileLogger(OutputStream outputStream, int level) {
+    FileLogger(OutputStream outputStream,
+               int level) {
         super(outputStream, level);
     }
 

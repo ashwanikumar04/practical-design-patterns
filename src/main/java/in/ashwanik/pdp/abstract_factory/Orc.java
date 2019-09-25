@@ -5,7 +5,10 @@ import java.util.List;
 class Orc extends Enemy {
     static final String ORC = "Orc";
 
-    Orc(String name, String description, int health, List<Weapon> weapons) {
+    Orc(String name,
+        String description,
+        int health,
+        List<Weapon> weapons) {
         super(name, description, health, weapons);
     }
 

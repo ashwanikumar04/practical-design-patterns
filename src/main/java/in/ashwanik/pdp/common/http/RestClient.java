@@ -25,7 +25,10 @@ public class RestClient {
     @NonNull
     private OkHttpClient httpClient;
 
-    public <S, E, K> RestResponse<S, E> post(Class<S> successClazz, Class<E> errorClazz, K data, RequestParam requestParams) {
+    public <S, E, K> RestResponse<S, E> post(Class<S> successClazz,
+                                             Class<E> errorClazz,
+                                             K data,
+                                             RequestParam requestParams) {
         RequestBody body = RequestBody.create(data == null ? "{}" : Json.serialize(data), JSON);
         Request.Builder builder = new Request.Builder()
                 .url(requestParams.getUrl())
@@ -34,14 +37,17 @@ public class RestClient {
         return handleResponse(successClazz, errorClazz, builder.build(), requestParams);
     }
 
-    public <S, E> RestResponse<S, E> get(Class<S> successClazz, Class<E> errorClazz, RequestParam requestParams) {
+    public <S, E> RestResponse<S, E> get(Class<S> successClazz,
+                                         Class<E> errorClazz,
+                                         RequestParam requestParams) {
         Request.Builder builder = new Request.Builder()
                 .url(requestParams.getUrl());
         addHeaders(requestParams.getHeaders(), builder);
         return handleResponse(successClazz, errorClazz, builder.build(), requestParams);
     }
 
-    private void addHeaders(Map<String, String> headers, Request.Builder builder) {
+    private void addHeaders(Map<String, String> headers,
+                            Request.Builder builder) {
         if (headers != null && !headers.isEmpty()) {
             for (Map.Entry<String, String> entry : headers.entrySet()) {
                 builder.addHeader(entry.getKey(), entry.getValue());
@@ -50,7 +56,10 @@ public class RestClient {
     }
 
 
-    private <S, E> RestResponse<S, E> handleResponse(Class<S> successClazz, Class<E> errorClazz, Request request, RequestParam requestParams) {
+    private <S, E> RestResponse<S, E> handleResponse(Class<S> successClazz,
+                                                     Class<E> errorClazz,
+                                                     Request request,
+                                                     RequestParam requestParams) {
         try (Response response = getResponse(request, requestParams.getTimeout())) {
             if (response.isSuccessful()) {
                 return RestResponse
@@ -68,7 +77,8 @@ public class RestClient {
         }
     }
 
-    private Response getResponse(Request request, int timeout) throws IOException {
+    private Response getResponse(Request request,
+                                 int timeout) throws IOException {
         OkHttpClient client = httpClient.newBuilder()
                 .readTimeout(timeout, TimeUnit.MILLISECONDS)
                 .build();

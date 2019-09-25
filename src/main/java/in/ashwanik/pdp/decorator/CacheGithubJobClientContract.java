@@ -11,8 +11,8 @@ import java.util.Map;
 
 public class CacheGithubJobClientContract implements GithubJobClientContract {
 
-    private Map<String, List<GithubJob>> cache;
     private final GithubJobClientContract contract;
+    private Map<String, List<GithubJob>> cache;
 
     public CacheGithubJobClientContract(GithubJobClientContract contract) {
         this.contract = contract;
@@ -20,7 +20,8 @@ public class CacheGithubJobClientContract implements GithubJobClientContract {
     }
 
     @Override
-    public List<GithubJob> getJobs(RestClient restClient, RequestParam requestParam) {
+    public List<GithubJob> getJobs(RestClient restClient,
+                                   RequestParam requestParam) {
         cache.computeIfAbsent(requestParam.getUrl(), k -> contract.getJobs(restClient, requestParam));
         return cache.get(requestParam.getUrl());
     }

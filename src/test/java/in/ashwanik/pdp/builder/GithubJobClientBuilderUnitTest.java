@@ -28,7 +28,8 @@ public class GithubJobClientBuilderUnitTest {
 
 
         @Override
-        public List<GithubJob> getJobs(RestClient restClient, RequestParam requestParam) {
+        public List<GithubJob> getJobs(RestClient restClient,
+                                       RequestParam requestParam) {
             return null;
         }
     }

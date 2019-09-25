@@ -8,11 +8,13 @@ class SubscribeService {
         this.broker = broker;
     }
 
-    void subscribe(Subscriber subscriber, String topic) {
+    void subscribe(Subscriber subscriber,
+                   String topic) {
         broker.addSubscriber(topic, subscriber);
     }
 
-    void unsubscribe(Subscriber subscriber, String topic) {
+    void unsubscribe(Subscriber subscriber,
+                     String topic) {
         broker.removeSubscriber(topic, subscriber);
     }
 

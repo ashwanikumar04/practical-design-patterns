@@ -5,6 +5,7 @@ import java.io.OutputStream;
 
 public interface JsonWriter {
 
-    void write(OutputStream outputStream, byte[] data) throws IOException;
+    void write(OutputStream outputStream,
+               byte[] data) throws IOException;
 
 }

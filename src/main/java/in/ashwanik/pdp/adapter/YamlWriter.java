@@ -5,6 +5,7 @@ import java.io.OutputStream;
 
 interface YamlWriter {
 
-    void write(OutputStream outputStream, byte[] data) throws IOException;
+    void write(OutputStream outputStream,
+               byte[] data) throws IOException;
 
 }

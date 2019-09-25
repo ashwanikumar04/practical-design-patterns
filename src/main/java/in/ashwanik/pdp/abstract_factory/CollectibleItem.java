@@ -6,7 +6,9 @@ import lombok.Getter;
 class CollectibleItem extends Item {
     private int weight;
 
-    CollectibleItem(String name, String description, int weight) {
+    CollectibleItem(String name,
+                    String description,
+                    int weight) {
         super(name, description);
         this.weight = weight;
     }

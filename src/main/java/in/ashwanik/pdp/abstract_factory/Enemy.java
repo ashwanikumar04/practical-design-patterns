@@ -12,7 +12,10 @@ abstract class Enemy {
     private List<Weapon> weapons;
     private int health;
 
-    Enemy(String name, String description, int health, List<Weapon> weapons) {
+    Enemy(String name,
+          String description,
+          int health,
+          List<Weapon> weapons) {
         this.name = name;
         this.description = description;
         this.weapons = weapons;

@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class GithubJob extends BaseObject{
+public class GithubJob extends BaseObject {
     @SerializedName("id")
     @Expose
     private String id;

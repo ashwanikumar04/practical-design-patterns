@@ -7,7 +7,11 @@ class Weapon extends CollectibleItem {
     private int minimumDamage;
     private int maximumDamage;
 
-    Weapon(String name, String description, int weight, int minimumDamage, int maximumDamage) {
+    Weapon(String name,
+           String description,
+           int weight,
+           int minimumDamage,
+           int maximumDamage) {
         super(name, description, weight);
         this.maximumDamage = maximumDamage;
         this.minimumDamage = minimumDamage;

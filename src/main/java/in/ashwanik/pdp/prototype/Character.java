@@ -12,7 +12,10 @@ class Character {
     private List<Weapon> weapons;
     private int health;
 
-    Character(String name, String description, int health, List<Weapon> weapons) {
+    Character(String name,
+              String description,
+              int health,
+              List<Weapon> weapons) {
         this.name = name;
         this.description = description;
         this.weapons = weapons;

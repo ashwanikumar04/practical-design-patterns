@@ -12,7 +12,8 @@ abstract class AbstractLogger {
     int level;
     private AbstractLogger nextLogger;
 
-    AbstractLogger(OutputStream outputStream, int level) {
+    AbstractLogger(OutputStream outputStream,
+                   int level) {
         this.outputStream = outputStream;
         this.level = level;
     }
@@ -22,7 +23,8 @@ abstract class AbstractLogger {
         this.nextLogger = logger;
     }
 
-    void logMessage(int level, String message) throws IOException {
+    void logMessage(int level,
+                    String message) throws IOException {
         if (this.level <= level) {
             write(message);
         }

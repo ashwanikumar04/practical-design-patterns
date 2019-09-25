@@ -11,7 +11,8 @@ public class YamlToJsonDocumentAdapter implements JsonWriter {
     }
 
     @Override
-    public void write(OutputStream outputStream, byte[] data) throws IOException {
+    public void write(OutputStream outputStream,
+                      byte[] data) throws IOException {
         yamlWriter.write(outputStream, data);
     }
 }

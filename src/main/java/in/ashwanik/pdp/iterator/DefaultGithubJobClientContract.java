@@ -13,7 +13,8 @@ import java.util.List;
 public class DefaultGithubJobClientContract implements GithubJobClientContract {
 
     @Override
-    public List<GithubJob> getJobs(RestClient restClient, RequestParam requestParam) {
+    public List<GithubJob> getJobs(RestClient restClient,
+                                   RequestParam requestParam) {
         RestResponse<GithubJob[], BaseObject> data = restClient.get(GithubJob[].class, BaseObject.class, requestParam);
         return Arrays.asList(data.getSuccess());
     }

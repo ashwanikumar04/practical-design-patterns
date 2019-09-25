@@ -9,7 +9,8 @@ public class CacheService {
         this.cache = cache;
     }
 
-    void put(String key, String value) {
+    void put(String key,
+             String value) {
         cache.put(key, value);
     }
 

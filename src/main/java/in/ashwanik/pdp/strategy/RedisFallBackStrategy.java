@@ -6,13 +6,15 @@ public class RedisFallBackStrategy implements CacheStrategy {
     private CacheStrategy inMemoryCache;
     private CacheStrategy redisCache;
 
-    RedisFallBackStrategy(CacheStrategy inMemoryCache, CacheStrategy redisCache) {
+    RedisFallBackStrategy(CacheStrategy inMemoryCache,
+                          CacheStrategy redisCache) {
         this.inMemoryCache = inMemoryCache;
         this.redisCache = redisCache;
     }
 
     @Override
-    public CacheType save(String key, String value) {
+    public CacheType save(String key,
+                          String value) {
         try {
             return redisCache.save(key, value);
         } catch (Exception ex) {

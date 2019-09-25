@@ -8,7 +8,8 @@ public class RedisCacheStrategy implements CacheStrategy {
     }
 
     @Override
-    public CacheType save(String key, String value) {
+    public CacheType save(String key,
+                          String value) {
         redisClient.save(key, value);
         return CacheType.REDIS;
     }
