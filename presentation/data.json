@@ -111,5 +111,11 @@
     "name": "Service Locator",
     "code": "service_locator",
     "imgClass": "img-center-30"
+  },
+  {
+    "img": "composite",
+    "name": "Composite",
+    "code": "composite",
+    "imgClass": "img-center-70"
   }
 ]
