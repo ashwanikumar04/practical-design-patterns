@@ -117,5 +117,11 @@
     "name": "Composite",
     "code": "composite",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "facade",
+    "name": "Facade",
+    "code": "facade",
+    "imgClass": "img-center-70"
   }
 ]

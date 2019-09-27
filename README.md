@@ -26,6 +26,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Adapter](http://git.ashwanik.in/practical-design-patterns/#17)
 - #### [Bridge](http://git.ashwanik.in/practical-design-patterns/#18)
 - #### [Composite](http://git.ashwanik.in/practical-design-patterns/#21)
+- #### [Facade](http://git.ashwanik.in/practical-design-patterns/#22)
 
 ## ***Behavioral Patterns***
 
