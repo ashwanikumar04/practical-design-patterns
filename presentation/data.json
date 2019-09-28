@@ -123,5 +123,11 @@
     "name": "Facade",
     "code": "facade",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "flyweight",
+    "name": "FlyWeight",
+    "code": "flyweight",
+    "imgClass": "img-center-70"
   }
 ]
