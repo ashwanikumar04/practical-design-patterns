@@ -45,6 +45,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Trampoline](http://git.ashwanik.in/practical-design-patterns/#16)
 - #### [Null Object](http://git.ashwanik.in/practical-design-patterns/#19)
 - #### [Service Locator](http://git.ashwanik.in/practical-design-patterns/#20)
+- #### [Retry](http://git.ashwanik.in/practical-design-patterns/#24)
 
 
 # References
