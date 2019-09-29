@@ -46,7 +46,7 @@ class RetryParam {
          * @param retryCount Count
          * @return Builder
          */
-        RetryParamBuilder retryCount(final int retryCount) {
+        RetryParamBuilder retryCount(final Integer retryCount) {
             this.retryCount = retryCount;
             return this;
         }
