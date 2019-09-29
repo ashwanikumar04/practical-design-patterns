@@ -46,6 +46,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Null Object](http://git.ashwanik.in/practical-design-patterns/#19)
 - #### [Service Locator](http://git.ashwanik.in/practical-design-patterns/#20)
 - #### [Retry](http://git.ashwanik.in/practical-design-patterns/#24)
+- #### [Object Pool](http://git.ashwanik.in/practical-design-patterns/#25)
 
 
 # References

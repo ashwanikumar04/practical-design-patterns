@@ -135,5 +135,11 @@
     "name": "Retry",
     "code": "retry",
     "imgClass": "img-center-30"
+  },
+  {
+    "img": "object_pool",
+    "name": "Object Pool",
+    "code": "object_pool",
+    "imgClass": "img-center-70"
   }
 ]
