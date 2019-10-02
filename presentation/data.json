@@ -153,5 +153,11 @@
     "name": "Template",
     "code": "template",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "state",
+    "name": "State",
+    "code": "state",
+    "imgClass": "img-center-70"
   }
 ]

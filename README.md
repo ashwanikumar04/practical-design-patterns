@@ -37,6 +37,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Iterator](http://git.ashwanik.in/practical-design-patterns/#6)
 - #### [Command](http://git.ashwanik.in/practical-design-patterns/#26)
 - #### [Template Method](http://git.ashwanik.in/practical-design-patterns/#27)
+- #### [State](http://git.ashwanik.in/practical-design-patterns/#27)
 
 
 ## ***Other Patterns***
