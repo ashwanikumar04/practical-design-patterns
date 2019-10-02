@@ -3,7 +3,7 @@ package in.ashwanik.pdp.template;
 import lombok.Getter;
 
 @Getter
-public class App {
+class App {
     private Arena arena;
 
     App() {
