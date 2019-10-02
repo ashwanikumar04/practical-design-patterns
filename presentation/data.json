@@ -141,5 +141,11 @@
     "name": "Object Pool",
     "code": "object_pool",
     "imgClass": "img-center-70"
+  },
+  {
+    "img": "command",
+    "name": "Command",
+    "code": "command",
+    "imgClass": "img-center-70"
   }
 ]
