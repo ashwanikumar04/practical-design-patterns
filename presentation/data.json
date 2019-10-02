@@ -147,5 +147,11 @@
     "name": "Command",
     "code": "command",
     "imgClass": "img-center-80"
+  },
+  {
+    "img": "template",
+    "name": "Template",
+    "code": "template",
+    "imgClass": "img-center-80"
   }
 ]
