@@ -159,5 +159,11 @@
     "name": "State",
     "code": "state",
     "imgClass": "img-center-80"
+  },
+  {
+    "img": "mediator",
+    "name": "Mediator",
+    "code": "mediator",
+    "imgClass": "img-center-30"
   }
 ]
