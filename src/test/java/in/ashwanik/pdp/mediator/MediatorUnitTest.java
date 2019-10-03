@@ -21,7 +21,9 @@ public class MediatorUnitTest {
         message.setPayload("test message");
         message.setTopic("topic1");
 
-        messageMediator.send(message);
+        Publisher publisher = new MessagePublisher("message_publisher", messageMediator);
+
+        publisher.publish(message);
 
         String messages = outputStream.toString();
 
