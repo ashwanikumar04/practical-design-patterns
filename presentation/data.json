@@ -171,5 +171,11 @@
     "name": "Visitor",
     "code": "visitor",
     "imgClass": "img-center-80"
+  },
+  {
+    "img": "memento",
+    "name": "Memento",
+    "code": "memento",
+    "imgClass": "img-center-80"
   }
 ]
