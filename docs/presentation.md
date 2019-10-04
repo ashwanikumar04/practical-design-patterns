@@ -247,7 +247,7 @@ class: center, middle
 
 # 
 
-<img src='http://git.ashwanik.in/practical-design-patterns/images/unit_of_work.svg' alt='Unit of work' class='img-center-30'/>
+<img src='http://git.ashwanik.in/practical-design-patterns/images/unit_of_work.svg' alt='Unit of work' class='img-center-40'/>
 
 <div class='a-center'> For implementation, see <a href='https://github.com/ashwanikumar04/practical-design-patterns/tree/master/src/main/java/in/ashwanik/pdp/unit_of_work' target='_blank'>here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</div>
 
