@@ -165,5 +165,11 @@
     "name": "Mediator",
     "code": "mediator",
     "imgClass": "img-center-40"
+  },
+  {
+    "img": "visitor",
+    "name": "Visitor",
+    "code": "visitor",
+    "imgClass": "img-center-80"
   }
 ]

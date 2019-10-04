@@ -39,6 +39,7 @@ For a quick run through, have a look at [this](http://git.ashwanik.in/practical-
 - #### [Template Method](http://git.ashwanik.in/practical-design-patterns/#27)
 - #### [State](http://git.ashwanik.in/practical-design-patterns/#28)
 - #### [Mediator](http://git.ashwanik.in/practical-design-patterns/#29)
+- #### [Visitor](http://git.ashwanik.in/practical-design-patterns/#30)
 
 
 ## ***Other Patterns***
