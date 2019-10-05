@@ -1,187 +1,218 @@
 [{
-    "img": "cor",
-    "name": "Chain of responsibility",
-    "code": "cor",
-    "imgClass": "img-center-50"
-  },
-  {
-    "img": "pub_sub",
-    "name": "Publisher Subscriber",
-    "code": "pub_sub",
-    "imgClass": "img-center-80"
-  },
-  {
-    "img": "observer",
-    "name": "Observer",
-    "code": "observer",
-    "imgClass": "img-center-80"
-  },
-  {
     "img": "builder",
     "name": "Builder",
     "code": "builder",
-    "imgClass": "img-center-70"
-  },
-  {
-    "img": "iterator",
-    "name": "Iterator",
-    "code": "iterator",
-    "imgClass": "img-center-80"
-  },
-  {
-    "img": "decorator",
-    "name": "Decorator",
-    "code": "decorator",
-    "imgClass": "img-center-50"
-  },
-  {
-    "img": "strategy",
-    "name": "Strategy",
-    "code": "strategy",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-70",
+    "type": "creational"
   },
   {
     "img": "singleton",
     "name": "Singleton",
     "code": "singleton",
-    "imgClass": "img-center-50"
-  },
-  {
-    "img": "game_loop",
-    "name": "Game Loop",
-    "code": "game_loop",
-    "imgClass": "img-center-50"
+    "imgClass": "img-center-50",
+    "type": "creational"
   },
   {
     "img": "prototype",
     "name": "Prototype",
     "code": "prototype",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-70",
+    "type": "creational"
   },
   {
     "img": "factory_method",
     "name": "Factory Method",
     "code": "factory_method",
-    "imgClass": "img-center-70"
-  },
-  {
-    "img": "proxy",
-    "name": "Proxy",
-    "code": "proxy",
-    "imgClass": "img-center-50"
-  },
-  {
-    "img": "dependency_injection",
-    "name": "Dependency Injection",
-    "code": "dependency_injection",
-    "imgClass": "img-center-50"
+    "imgClass": "img-center-70",
+    "type": "creational"
   },
   {
     "img": "abstract_factory",
     "name": "Abstract Factory",
     "code": "abstract_factory",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-80",
+    "type": "creational"
   },
   {
-    "img": "trampoline",
-    "name": "Trampoline",
-    "code": "trampoline",
-    "imgClass": "img-center-50"
+    "img": "decorator",
+    "name": "Decorator",
+    "code": "decorator",
+    "imgClass": "img-center-50",
+    "type": "structural"
+  },
+  {
+    "img": "proxy",
+    "name": "Proxy",
+    "code": "proxy",
+    "imgClass": "img-center-50",
+    "type": "structural"
   },
   {
     "img": "adapter",
     "name": "Adapter",
     "code": "adapter",
-    "imgClass": "img-center-30"
+    "imgClass": "img-center-30",
+    "type": "structural"
   },
   {
     "img": "bridge",
     "name": "Bridge",
     "code": "bridge",
-    "imgClass": "img-center-70"
-  },
-  {
-    "img": "null_object",
-    "name": "Null Object",
-    "code": "null_object",
-    "imgClass": "img-center-30"
-  },
-  {
-    "img": "service_locator",
-    "name": "Service Locator",
-    "code": "service_locator",
-    "imgClass": "img-center-30"
+    "imgClass": "img-center-70",
+    "type": "structural"
   },
   {
     "img": "composite",
     "name": "Composite",
     "code": "composite",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-70",
+    "type": "structural"
   },
   {
     "img": "facade",
     "name": "Facade",
     "code": "facade",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-70",
+    "type": "structural"
   },
   {
     "img": "flyweight",
     "name": "FlyWeight",
     "code": "flyweight",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-70",
+    "type": "structural"
   },
   {
-    "img": "retry",
-    "name": "Retry",
-    "code": "retry",
-    "imgClass": "img-center-30"
+    "img": "cor",
+    "name": "Chain of responsibility",
+    "code": "cor",
+    "imgClass": "img-center-50",
+    "type": "behavioral"
   },
   {
-    "img": "object_pool",
-    "name": "Object Pool",
-    "code": "object_pool",
-    "imgClass": "img-center-70"
+    "img": "observer",
+    "name": "Observer",
+    "code": "observer",
+    "imgClass": "img-center-80",
+    "type": "behavioral"
+  },
+  {
+    "img": "strategy",
+    "name": "Strategy",
+    "code": "strategy",
+    "imgClass": "img-center-80",
+    "type": "behavioral"
+  },
+  {
+    "img": "iterator",
+    "name": "Iterator",
+    "code": "iterator",
+    "imgClass": "img-center-80",
+    "type": "behavioral"
   },
   {
     "img": "command",
     "name": "Command",
     "code": "command",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-80",
+    "type": "behavioral"
   },
   {
     "img": "template",
     "name": "Template",
     "code": "template",
-    "imgClass": "img-center-70"
+    "imgClass": "img-center-70",
+    "type": "behavioral"
   },
   {
     "img": "state",
     "name": "State",
     "code": "state",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-80",
+    "type": "behavioral"
   },
   {
     "img": "mediator",
     "name": "Mediator",
     "code": "mediator",
-    "imgClass": "img-center-40"
+    "imgClass": "img-center-40",
+    "type": "behavioral"
   },
   {
     "img": "visitor",
     "name": "Visitor",
     "code": "visitor",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-80",
+    "type": "behavioral"
   },
   {
     "img": "memento",
     "name": "Memento",
     "code": "memento",
-    "imgClass": "img-center-80"
+    "imgClass": "img-center-80",
+    "type": "behavioral"
+  },
+  {
+    "img": "pub_sub",
+    "name": "Publisher Subscriber",
+    "code": "pub_sub",
+    "imgClass": "img-center-80",
+    "type": "others"
+  },
+  {
+    "img": "game_loop",
+    "name": "Game Loop",
+    "code": "game_loop",
+    "imgClass": "img-center-50",
+    "type": "others"
+  },
+  {
+    "img": "dependency_injection",
+    "name": "Dependency Injection",
+    "code": "dependency_injection",
+    "imgClass": "img-center-50",
+    "type": "others"
+  },
+  {
+    "img": "trampoline",
+    "name": "Trampoline",
+    "code": "trampoline",
+    "imgClass": "img-center-50",
+    "type": "others"
+  },
+  {
+    "img": "null_object",
+    "name": "Null Object",
+    "code": "null_object",
+    "imgClass": "img-center-30",
+    "type": "others"
+  },
+  {
+    "img": "retry",
+    "name": "Retry",
+    "code": "retry",
+    "imgClass": "img-center-30",
+    "type": "others"
+  },
+  {
+    "img": "object_pool",
+    "name": "Object Pool",
+    "code": "object_pool",
+    "imgClass": "img-center-70",
+    "type": "others"
+  },
+  {
+    "img": "service_locator",
+    "name": "Service Locator",
+    "code": "service_locator",
+    "imgClass": "img-center-30",
+    "type": "others"
   },
   {
     "img": "unit_of_work",
     "name": "Unit of work",
     "code": "unit_of_work",
-    "imgClass": "img-center-40"
+    "imgClass": "img-center-40",
+    "type": "others"
   }
 ]
